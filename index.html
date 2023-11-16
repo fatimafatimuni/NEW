@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto-World</title>
+  <link rel="stylesheet" href="/AutoWorld/CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="/AutoWorld/CSS/gallery.css">
+  <link rel="stylesheet" href="/AutoWorld/CSS/footer.css">
+  <link rel="stylesheet" href="/AutoWorld/CSS/index.css">
+</head>
+<style>
+  * {
+    font-family: 'Times New Roman';
+  }
+</style>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-dark">
+    <img src="/AutoWorld/images/logo1.png" alt="" class="bg-light"
+      style="width: 100px; height:60px; margin-left: 10px;">
+    <div class="container-fluid">
+      <a class="navbar-brand text-light fs-5" id="hove" href="/AutoWorld/index.html">AUTO-WORLD</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-light fs-5" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              CAR BRANDS
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/AutoWorld/suzuki.html">SUZUKI</a></li>
+              <li><a class="dropdown-item" href="/AutoWorld/honda.html">HONDA</a></li>
+              <li><a class="dropdown-item" href="/AutoWorld/ford.html">FORD</a></li>
+              <li><a class="dropdown-item" href="/AutoWorld/web.html">AUDI</a></li>
+              <li><a class="dropdown-item" href="/AutoWorld/warranty/war.html">Car Warranties</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light fs-5" href="/AutoWorld/financeSchemes.html">CAR FINANCE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-light fs-5" aria-current="page" href="/AutoWorld/about.html">ABOUT
+              US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light fs-5" href="/AutoWorld/contact.html">CONTACT US</a>
+          </li>
+        </ul>
+
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" id="search-item" placeholder="Search" aria-label="Search"
+            onkeyup="search()">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- CAROUSEL -->
+  <div>
+    <img src="/AutoWorld/images/Black_and_Gold_Modern_Automotive_Car_Showroom_Logo-removebg-preview.png" alt=""
+      style="margin-left: 25%; width: 50%; height: 25%;">
+  </div>
+
+  <!-- Start of TRENDING Section -->
+  <h1 style="margin-top: 10px; text-align: center;">TRENDING</h1>
+  <hr>
+  <div id="product-list">
+    <div class="container-fluid d-flex justify-content-center">
+      <div class="row row-cols-1 row-cols-md-4 g-2">
+        <div class="col">
+          <div class="card h-100">
+            <img id="pics" src="/AutoWorld/images/HONDA/vezel trending.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title" style="text-align: center;">VEZEL</h3>
+              <hr>
+              <p class="card-text">The Honda Vezel is a compact crossover SUV known for its sporty design, efficient
+                performance, and versatile interior The Honda Vezel, also known as the HR-V in some markets.</p>
+              <p id="text"></p>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-primary btn-outline-success text-dark"
+                onclick="myFunction(); this.onclick=null;">SHOW MORE</button>
+            </div>
+
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img id="pics" src="/AutoWorld/images/SUZUKI/wagaon r trending.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title" style="text-align: center;">WAGON R</h3>
+              <hr>
+              <p class="card-text">The Wagon R is a compact car known for its space-efficient design, comfortable
+                interior, and fuel efficiency. It offers practicality and versatility, making it a popular choice for
+                urban driving and small families.</p>
+              <p id="wagon"></p>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-primary btn-outline-success text-dark"
+                onclick="wagonFunction(); this.onclick=null;">SHOW MORE</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img id="pics" src="/AutoWorld/images/HONDA/civic trending.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title" style="text-align: center;">CIVIC</h3>
+              <hr>
+              <p class="card-text">The Civic is a compact car manufactured by Honda, known for its reliable performance
+                and fuel efficiency.</p>
+              <p id="civic"></p>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-primary btn-outline-success text-dark"
+                onclick="civicFunction(); this.onclick=null;">SHOW MORE</button>
+            </div>
+
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img id="pics" src="/AutoWorld/images/SUZUKI/suzuki alto trending.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title" style="text-align: center;">ALTO</h3>
+              <hr>
+              <p class="card-text">The Suzuki Alto is a compact car known for its fuel efficiency and affordability.
+                With
+                a small yet reliable engine, it's perfect for city commuting and offers basic features for a practical
+                driving experience.
+              </p>
+              <P id="alto"></P>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-primary btn-outline-success text-dark"
+                onclick="altoFunction(); this.onclick=null;">SHOW MORE</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Of TRENDING Section -->
+
+    <!-- Start of Coming Soon Section -->
+    <h1 style="margin-top: 10px; text-align: center;">Coming Soon</h1>
+    <hr>
+    <div class="container-fluid d-flex justify-content-center">
+      <div class="row row-cols-1 row-cols-md-4 g-2">
+        <div class="col">
+          <div class="card h-100">
+            <img id="pics" src="/AutoWorld/images/AUDI/coming soon.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title" style="text-align: center;">AUDI E TRON</h3>
+              <hr>
+              <p class="card-text">The Audi e-tron is an all-electric SUV that combines cutting-edge technology with
+                sustainable performance. With a powerful electric motor, long-range capability</p>
+              <p id="audietron"></p>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-primary btn-outline-success text-dark"
+                onclick="audietronFunction(); this.onclick=null;">SHOW MORE</button>
+            </div>
+
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img id="pics" src="/AutoWorld/images/bmw/bmw coming soon.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title" style="text-align: center;">BMW M5</h3>
+              <hr>
+              <p class="card-text">The BMW 5 Series is a luxury sedan known for its blend of performance and
+                sophistication. Its powerful engines, advanced technology,</p>
+              <P id="bmw5"></P>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-primary btn-outline-success text-dark"
+                onclick="bmw5Function(); this.onclick=null;">SHOW MORE</button>
+            </div>
+
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img id="pics" src="/AutoWorld/images/tesla.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title" style="text-align: center;">TESLA 3</h3>
+              <hr>
+              <p class="card-text">The Tesla Model 3 is an electric car renowned for its sleek design, impressive
+                acceleration, and advanced Autopilot technology.</p>
+              <p id="tesla"> </p>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-primary btn-outline-success text-dark"
+                onclick="teslaFunction(); this.onclick=null;">SHOW MORE</button>
+            </div>
+
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img id="pics" src="/AutoWorld/images/HONDA/civic trending.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title" style="text-align: center;">CIVIC</h3>
+              <hr>
+              <p class="card-text">The Honda Civic is a compact car known for its reliability, fuel efficiency, and
+                comfortable interior.</p>
+              <p id="civic5"> </p>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-primary btn-outline-success text-dark"
+                onclick="newcivicFunction(); this.onclick=null;">SHOW MORE</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- End Of Coming Soon Section -->
+
+
+  <!-- GALLERY -->
+  <div class="slider">
+
+    <div class="slide-track ">
+      <a href="/AutoWorld/mehran.html">
+        <div class="slide">
+          <img src="/AutoWorld/images/slide show/catalogue.jfif" alt="MEHRAN" class="w-100 h-75">
+        </div>
+      </a>
+      <a href="/AutoWorld/alto.html">
+        <div class="slide">
+          <img src="/AutoWorld/images/slide show/catalogue 1.jfif" alt="ALTO" class="w-100 h-75">
+        </div>
+      </a>
+      <a href="/AutoWorld/wagon.html">
+        <div class="slide">
+          <img src="/AutoWorld/images/slide show/catalogue 2.jfif" alt="WAGON R" class="w-100 h-75">
+        </div>
+      </a>
+      <a href="/AutoWorld/cultus.html">
+        <div class="slide">
+          <img src="/AutoWorld/images/slide show/catalogue 3.jfif" alt="CULTUS" class="w-100 h-75">
+        </div>
+      </a>
+      <a href="/AutoWorld/swift.html">
+        <div class="slide">
+          <img src="/AutoWorld/images/slide show/catalogue 6.jfif" alt="SWIFT" class="w-100 h-75">
+        </div>
+      </a>
+      <a href="/AutoWorld/prado.html">
+        <div class="slide">
+          <img src="/AutoWorld/images/slide show/toyotac 6.jfif" alt="LAND CRUISER" class="w-100 h-75">
+        </div>
+      </a>
+      <a href="/AutoWorld/fortuner.html">
+        <div class="slide">
+          <img src="/AutoWorld/images/slide show/toyotac 4.jfif" alt="FORTUNER" class="w-100 h-75">
+        </div>
+      </a>
+      <a href="/AutoWorld/hilux.html">
+        <div class="slide">
+          <img src="/AutoWorld/images/slide show/toyotac 5.jpg" alt="HILUX" class="w-100 h-75">
+        </div>
+      </a>
+      <a href="/AutoWorld/yaris.html">
+        <div class="slide">
+          <img src="/AutoWorld/images/slide show/toyotac 1.jfif" alt="YARIS" class="w-100 h-75">
+        </div>
+      </a>
+      <a href="/AutoWorld/corola.html">
+        <div class="slide">
+          <img src="/AutoWorld/images/slide show/toyotac 2.jpg" alt="COROLLA" class="w-100 h-75">
+        </div>
+      </a>
+    </div>
+  </div>
+  <!-- End Of Gallery -->
+
+  <!-- Start Of Footer Section -->
+  <footer class="footer">
+    <div class="waves">
+      <div class="wave" id="wave1"></div>
+      <div class="wave" id="wave2"></div>
+      <div class="wave" id="wave3"></div>
+      <div class="wave" id="wave4"></div>
+    </div>
+    <ul class="social-icon">
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a></li>
+    </ul>
+    <ul class="menu">
+      <li class="menu__item"><a class="menu__link" href="/AutoWorld/index.html">Home</a></li>
+      <li class="menu__item"><a class="menu__link" href="/AutoWorld/about.html">About Us</a></li>
+      <li class="menu__item"><a class="menu__link" href="/AutoWorld/contact.html">Contact Us</a></li>
+
+    </ul>
+    <p>&copy; 2023 AUTO-WORLD COMPANY, All Rights Reserved</p>
+  </footer>
+
+  <!-- End Of Footer Section -->
+
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="/AutoWorld/JS/filter.js"></script>
+  <script src="/AutoWorld/JS/bootstrap.bundle.js"></script>
+  <script src="/AutoWorld/JS/home.js"></script>
+</body>
+
+</html>
